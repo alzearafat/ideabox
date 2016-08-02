@@ -9,6 +9,10 @@
 
 ![alt text](http://i64.tinypic.com/2hp0hoo.png "New Idea")
 
+### DEMO
+
+Demo : https://ideabox-demo.herokuapp.com/
+
 ### INTRO
 
 This is simple Rails CRUD app with authorization, authentication and Bootstrap framework. I made this app in my spare time for learning purpose only.
