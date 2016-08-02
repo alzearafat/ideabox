@@ -1,0 +1,12 @@
+<%= form_for @idea, html: { multipart: true } do |f| %>
+	<%= f.label :image %>
+	<%= f.file_field :image %>
+	<br />
+	<%= f.label :title %>
+	<%= f.text_field :title, class: "form-control input-lg" %>
+	<br />
+	<%= f.label :description %>
+	<%= f.text_area :description, class: "form-control input-lg" %>
+	<br />
+	<%= f.submit %>
+<% end %>

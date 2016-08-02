@@ -1,0 +1,31 @@
+<div class="container-custom">
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="ideabox-single-wrapper">
+				<div class="row">
+					<div class="col-xs-12">
+						<% if flash[:success] %>
+    						<div class="success"><%= flash[:success] %></div>
+  						<% end %>
+  					</div>
+  				</div>
+  				<br />
+				<div class="row">
+					<div class="col-xs-12 col-md-4">
+						<div class="ideabox-featured-image-boxed" style="background:url(<%= @idea.image.url(:medium) %>) center center no-repeat;"></div>
+					</div>
+					<div class="col-xs-12 col-md-8">
+						<h2><%= @idea.title %></h2>
+						<p><%= @idea.description %></p>
+						<p><%= fa_icon "user" %> <%= @idea.user.email %></p>
+						<br />
+						<% if @idea.user == current_user %>
+						<%= link_to("Edit", edit_idea_path(@idea), class: "ideabox-btn") %>
+						<%= link_to("Delete", idea_path(@idea), method: :delete, data: {confirm: "Are you sure bro?"}, class: "ideabox-btn") %>
+						<% end %>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

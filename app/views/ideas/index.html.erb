@@ -1,0 +1,24 @@
+<div class="container-custom">
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="ideabox-body-wrapper">
+			  	<% if flash[:notice] %>
+    				<div class="notice"><%= flash[:notice] %></div>
+  				<% end %>
+  				<br />
+				<% @idea.each do |idea| %>
+				<div class="row">
+					<div class="col-xs-12 col-md-2">
+						<div class="ideabox-featured-image" style="background:url(<%= idea.image.url(:medium) %>) center center no-repeat;"></div>
+					</div>
+					<div class="col-xs-12 col-md-10">
+						<h3><%= link_to(idea.title, idea) %></h3>
+						<p><%= truncate(idea.description, :length => 100) %></p>
+					</div>
+				</div>
+				<br />
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>
