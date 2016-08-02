@@ -1,3 +1,14 @@
+
+### SCREENSHOT
+
+![alt text](http://i64.tinypic.com/hx3itd.png "Homepage")
+
+![alt text](http://i66.tinypic.com/ofcapv.png "Single Idea")
+
+![alt text](http://i65.tinypic.com/212xz60.png "Sign Up")
+
+![alt text](http://i64.tinypic.com/2hp0hoo.png "New Idea")
+
 ### INTRO
 
 This is simple Rails CRUD app with authorization, authentication and Bootstrap framework. I made this app in my spare time for learning purpose only.
@@ -11,13 +22,4 @@ This is simple Rails CRUD app with authorization, authentication and Bootstrap f
 - Bootstrap-Sass 3.3.7
 - Paperclip 5.0.0
 
-### SCREENSHOT
-
-![alt text](http://i64.tinypic.com/hx3itd.png "Homepage")
-
-![alt text](http://i66.tinypic.com/ofcapv.png "Single Idea")
-
-![alt text](http://i65.tinypic.com/212xz60.png "Sign Up")
-
-![alt text](http://i64.tinypic.com/2hp0hoo.png "New Idea")
 
